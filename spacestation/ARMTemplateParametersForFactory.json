@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "spacestation"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStoragegen2_accountKey": {
+			"value": ""
+		},
+		"SqlServerLinkedservice_password": {
+			"value": ""
+		},
+		"AzureBlobStorage2_properties_typeProperties_connectionString_secretName": {
+			"value": "seccrets-spacestation-kv"
+		},
+		"AzureDataLakeStoragegen2_properties_typeProperties_url": {
+			"value": "https://adlsgen2storagedev1.dfs.core.windows.net/"
+		},
+		"AzureKeyVaultLinkedService_properties_typeProperties_baseUrl": {
+			"value": "https://KV-newvault.vault.azure.net/"
+		},
+		"SqlServerLinkedservice_properties_typeProperties_server": {
+			"value": "YADAVJI\\SQLEXPRESS"
+		},
+		"SqlServerLinkedservice_properties_typeProperties_database": {
+			"value": "employee"
+		},
+		"SqlServerLinkedservice_properties_typeProperties_userName": {
+			"value": "sqlserver"
+		},
+		"event trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/102755f3-e680-4220-8649-8af83cacd7a7/resourceGroups/My_first_resource/providers/Microsoft.Storage/storageAccounts/spacestation"
+		}
+	}
+}
