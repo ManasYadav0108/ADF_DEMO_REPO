@@ -1,0 +1,9 @@
+{
+	"name": "spacestation",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6a069b8f-ace2-474a-bd95-9d106c81648c",
+		"tenantId": "cc6d2a50-8fe8-42ca-8216-254318972b57"
+	}
+}

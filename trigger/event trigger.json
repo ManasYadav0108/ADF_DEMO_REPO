@@ -1,0 +1,17 @@
+{
+	"name": "event trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/adfdemo/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/102755f3-e680-4220-8649-8af83cacd7a7/resourceGroups/My_first_resource/providers/Microsoft.Storage/storageAccounts/spacestation",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

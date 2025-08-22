@@ -1,0 +1,39 @@
+{
+	"name": "Pivot_Unpivot",
+	"properties": {
+		"activities": [
+			{
+				"name": "dataflow1",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "Unpivot",
+						"type": "DataFlowReference",
+						"datasetParameters": {
+							"source": {
+								"filename": "unpiot.csv"
+							}
+						}
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2025-08-11T09:56:17Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
